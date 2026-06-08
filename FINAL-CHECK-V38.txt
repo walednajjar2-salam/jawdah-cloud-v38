@@ -1,0 +1,26 @@
+Jawdah Cloud v38 Deploy Ready - Final Check
+
+Included:
+- server.py updated for cloud PORT and 0.0.0.0 host
+- JAWDAH_DATA_DIR / JAWDAH_DB_PATH support for persistent disks
+- /api/health endpoint
+- Dockerfile
+- docker-compose.yml
+- Procfile
+- render.yaml
+- fly.toml
+- .env.example
+- README-V38-CLOUD-DEPLOY.md
+
+Smoke tests performed:
+- Python syntax check: PASS
+- Local server start on custom port: PASS
+- /api/health: PASS
+- Login admin/admin123: PASS
+- /api/bootstrap dashboard data: PASS
+
+Default login:
+admin / admin123
+
+Production note:
+Change default passwords after first login and use persistent storage for SQLite.

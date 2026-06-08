@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: jawdah-cloud
+    env: python
+    buildCommand: ""
+    startCommand: "python server.py"
+    envVars:
+      - key: JAWDAH_HOST
+        value: 0.0.0.0
+      - key: JAWDAH_DATA_DIR
+        value: /var/data
+    disk:
+      name: jawdah-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,15 @@
+services:
+  jawdah:
+    build: .
+    container_name: jawdah-cloud
+    ports:
+      - "8765:8765"
+    environment:
+      JAWDAH_HOST: 0.0.0.0
+      JAWDAH_PORT: 8765
+      JAWDAH_DATA_DIR: /app/data
+    volumes:
+      - jawdah_data:/app/data
+    restart: unless-stopped
+volumes:
+  jawdah_data:

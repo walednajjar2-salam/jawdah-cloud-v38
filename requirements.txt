@@ -1,0 +1,2 @@
+# Jawdah Cloud v38 uses only the Python standard library.
+# Keep this file so cloud platforms detect a Python app.
